@@ -8,10 +8,18 @@
 import SwiftUI
 
 public class BugSubmissionViewModel: ObservableObject {
+    private func convertImageToData(_ image: UIImage, completion: @escaping (Result<Data, Error>) -> Void) {
+        guard let imageData = image.jpegData(compressionQuality: 0.8) else {
+            completion(.failure(NSError(domain: "com.example.app", code: 0, userInfo: [NSLocalizedDescriptionKey: "Failed to convert image to data"])))
+            return
+        }
+        completion(.success(imageData))
+    }
 }
 
 struct BugSubmissionView: View {
     
+    @ObservedObject var bugSubmissionViewModel = BugSubmissionViewModel()
     @State private var bug = Bug(description: "", image: nil)
     @State private var showImagePicker = false
 
