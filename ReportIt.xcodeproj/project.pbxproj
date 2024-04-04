@@ -13,6 +13,7 @@
 		E67D279D2BBF076A006E8CD4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67D279C2BBF076A006E8CD4 /* Preview Assets.xcassets */; };
 		E67D27A42BBF079B006E8CD4 /* WelcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27A32BBF079B006E8CD4 /* WelcomingView.swift */; };
 		E67D27A62BBF0858006E8CD4 /* BugSubmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27A52BBF0858006E8CD4 /* BugSubmissionView.swift */; };
+		E67D27A82BBF0A15006E8CD4 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27A72BBF0A15006E8CD4 /* Bug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		E67D279C2BBF076A006E8CD4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E67D27A32BBF079B006E8CD4 /* WelcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomingView.swift; sourceTree = "<group>"; };
 		E67D27A52BBF0858006E8CD4 /* BugSubmissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionView.swift; sourceTree = "<group>"; };
+		E67D27A72BBF0A15006E8CD4 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				E67D27972BBF0768006E8CD4 /* ContentView.swift */,
 				E67D27A32BBF079B006E8CD4 /* WelcomingView.swift */,
 				E67D27A52BBF0858006E8CD4 /* BugSubmissionView.swift */,
+				E67D27A72BBF0A15006E8CD4 /* Bug.swift */,
 				E67D27992BBF076A006E8CD4 /* Assets.xcassets */,
 				E67D279B2BBF076A006E8CD4 /* Preview Content */,
 			);
@@ -147,6 +150,7 @@
 				E67D27982BBF0768006E8CD4 /* ContentView.swift in Sources */,
 				E67D27962BBF0768006E8CD4 /* ReportItApp.swift in Sources */,
 				E67D27A62BBF0858006E8CD4 /* BugSubmissionView.swift in Sources */,
+				E67D27A82BBF0A15006E8CD4 /* Bug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
