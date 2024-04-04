@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Bug {
+public struct Bug {
     var description: String
     var image: UIImage?
 }
