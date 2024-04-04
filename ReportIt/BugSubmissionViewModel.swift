@@ -12,7 +12,10 @@ import bug_api
 public class BugSubmissionViewModel: ObservableObject {
     
     public func submitBug(_ bug: Bug) {
-        convertImageToData(bug.image!) { result in
+        guard let image = bug.image else {
+            return
+        }
+        convertImageToData(image) { result in
             switch result {
             case let .success(data):
                 let imageData = data
