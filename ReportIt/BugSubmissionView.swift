@@ -10,7 +10,8 @@ import SwiftUI
 struct BugSubmissionView: View {
     
     @State private var bug = Bug(description: "", image: nil)
-    
+    @State private var showImagePicker = false
+
     var body: some View {
         VStack {
             Form {
@@ -23,6 +24,7 @@ struct BugSubmissionView: View {
                             .frame(height: 200)
                     }
                     Button(action: {
+                        showImagePicker.toggle()
                     }) {
                         Text("Add Image")
                     }
@@ -35,6 +37,9 @@ struct BugSubmissionView: View {
             }
         }.navigationTitle("Bug Submission")
         .navigationBarTitleDisplayMode(.large)
+        .sheet(isPresented: $showImagePicker) {
+            ImagePicker(image: $bug.image)
+        }
     }
 }
 
