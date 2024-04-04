@@ -27,6 +27,8 @@ struct WelcomingView: View {
                     Text("report a bug")
                 }
                 
+            }.navigationDestination(isPresented: $showBugSubmissionView) {
+                BugSubmissionView()
             }
         }
     }
