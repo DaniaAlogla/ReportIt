@@ -33,7 +33,8 @@ struct BugSubmissionView: View {
             } label: {
                 Text("Submit")
             }
-        }
+        }.navigationTitle("Bug Submission")
+        .navigationBarTitleDisplayMode(.large)
     }
 }
 
