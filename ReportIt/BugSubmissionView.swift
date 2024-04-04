@@ -64,7 +64,8 @@ struct BugSubmissionView: View {
                 }
             }
             Button {
-                
+                bugSubmissionViewModel.submitBug(bug)
+                bug = Bug(description: "", image: nil)
             } label: {
                 Text("Submit")
             }
