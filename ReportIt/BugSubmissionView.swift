@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+public class BugSubmissionViewModel: ObservableObject {
+}
+
 struct BugSubmissionView: View {
     
     @State private var bug = Bug(description: "", image: nil)
