@@ -69,10 +69,7 @@
 				E67D27952BBF0768006E8CD4 /* ReportItApp.swift */,
 				E67D27972BBF0768006E8CD4 /* ContentView.swift */,
 				E67D27A32BBF079B006E8CD4 /* WelcomingView.swift */,
-				E67D27A52BBF0858006E8CD4 /* BugSubmissionView.swift */,
-				E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */,
-				E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */,
-				E67D27A72BBF0A15006E8CD4 /* Bug.swift */,
+				E67D27B42BBF284A006E8CD4 /* BugSubmission */,
 				E67D27992BBF076A006E8CD4 /* Assets.xcassets */,
 				E67D279B2BBF076A006E8CD4 /* Preview Content */,
 			);
@@ -85,6 +82,25 @@
 				E67D279C2BBF076A006E8CD4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E67D27B42BBF284A006E8CD4 /* BugSubmission */ = {
+			isa = PBXGroup;
+			children = (
+				E67D27A52BBF0858006E8CD4 /* BugSubmissionView.swift */,
+				E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */,
+				E67D27A72BBF0A15006E8CD4 /* Bug.swift */,
+				E67D27B52BBF2865006E8CD4 /* Helpers */,
+			);
+			path = BugSubmission;
+			sourceTree = "<group>";
+		};
+		E67D27B52BBF2865006E8CD4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
