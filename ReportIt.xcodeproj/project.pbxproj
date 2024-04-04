@@ -15,6 +15,8 @@
 		E67D27A62BBF0858006E8CD4 /* BugSubmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27A52BBF0858006E8CD4 /* BugSubmissionView.swift */; };
 		E67D27A82BBF0A15006E8CD4 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27A72BBF0A15006E8CD4 /* Bug.swift */; };
 		E67D27AA2BBF0FA3006E8CD4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */; };
+		E67D27AD2BBF159A006E8CD4 /* bug-api in Frameworks */ = {isa = PBXBuildFile; productRef = E67D27AC2BBF159A006E8CD4 /* bug-api */; };
+		E67D27B12BBF185D006E8CD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E67D27B02BBF185D006E8CD4 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,7 @@
 		E67D27A52BBF0858006E8CD4 /* BugSubmissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionView.swift; sourceTree = "<group>"; };
 		E67D27A72BBF0A15006E8CD4 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
 		E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		E67D27B02BBF185D006E8CD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E67D27AD2BBF159A006E8CD4 /* bug-api in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +63,7 @@
 		E67D27942BBF0768006E8CD4 /* ReportIt */ = {
 			isa = PBXGroup;
 			children = (
+				E67D27B02BBF185D006E8CD4 /* GoogleService-Info.plist */,
 				E67D27952BBF0768006E8CD4 /* ReportItApp.swift */,
 				E67D27972BBF0768006E8CD4 /* ContentView.swift */,
 				E67D27A32BBF079B006E8CD4 /* WelcomingView.swift */,
@@ -95,6 +100,9 @@
 			dependencies = (
 			);
 			name = ReportIt;
+			packageProductDependencies = (
+				E67D27AC2BBF159A006E8CD4 /* bug-api */,
+			);
 			productName = ReportIt;
 			productReference = E67D27922BBF0768006E8CD4 /* ReportIt.app */;
 			productType = "com.apple.product-type.application";
@@ -123,6 +131,9 @@
 				Base,
 			);
 			mainGroup = E67D27892BBF0768006E8CD4;
+			packageReferences = (
+				E67D27AB2BBF159A006E8CD4 /* XCRemoteSwiftPackageReference "bug-api" */,
+			);
 			productRefGroup = E67D27932BBF0768006E8CD4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +150,7 @@
 			files = (
 				E67D279D2BBF076A006E8CD4 /* Preview Assets.xcassets in Resources */,
 				E67D279A2BBF076A006E8CD4 /* Assets.xcassets in Resources */,
+				E67D27B12BBF185D006E8CD4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		E67D27AB2BBF159A006E8CD4 /* XCRemoteSwiftPackageReference "bug-api" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/DaniaAlogla/bug-api.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		E67D27AC2BBF159A006E8CD4 /* bug-api */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E67D27AB2BBF159A006E8CD4 /* XCRemoteSwiftPackageReference "bug-api" */;
+			productName = "bug-api";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = E67D278A2BBF0768006E8CD4 /* Project object */;
 }
