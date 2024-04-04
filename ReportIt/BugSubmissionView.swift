@@ -7,6 +7,11 @@
 
 import SwiftUI
 
+struct Bug {
+    var description: String
+    var image: UIImage?
+}
+
 struct BugSubmissionView: View {
     var body: some View {
         Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
