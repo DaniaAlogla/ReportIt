@@ -10,9 +10,30 @@ import SwiftUI
 struct BugSubmissionView: View {
     
     @State private var bug = Bug(description: "", image: nil)
-
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            Form {
+                Section(header: Text("Bug Details")) {
+                    TextField("Description", text: $bug.description)
+                    if let image = bug.image {
+                        Image(uiImage: image)
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 200)
+                    }
+                    Button(action: {
+                    }) {
+                        Text("Add Image")
+                    }
+                }
+            }
+            Button {
+                
+            } label: {
+                Text("Submit")
+            }
+        }
     }
 }
 
