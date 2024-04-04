@@ -17,6 +17,7 @@
 		E67D27AA2BBF0FA3006E8CD4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */; };
 		E67D27AD2BBF159A006E8CD4 /* bug-api in Frameworks */ = {isa = PBXBuildFile; productRef = E67D27AC2BBF159A006E8CD4 /* bug-api */; };
 		E67D27B12BBF185D006E8CD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E67D27B02BBF185D006E8CD4 /* GoogleService-Info.plist */; };
+		E67D27B32BBF26C5006E8CD4 /* BugSubmissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		E67D27A72BBF0A15006E8CD4 /* Bug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bug.swift; sourceTree = "<group>"; };
 		E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E67D27B02BBF185D006E8CD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				E67D27972BBF0768006E8CD4 /* ContentView.swift */,
 				E67D27A32BBF079B006E8CD4 /* WelcomingView.swift */,
 				E67D27A52BBF0858006E8CD4 /* BugSubmissionView.swift */,
+				E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */,
 				E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */,
 				E67D27A72BBF0A15006E8CD4 /* Bug.swift */,
 				E67D27992BBF076A006E8CD4 /* Assets.xcassets */,
@@ -163,6 +166,7 @@
 			files = (
 				E67D27A42BBF079B006E8CD4 /* WelcomingView.swift in Sources */,
 				E67D27982BBF0768006E8CD4 /* ContentView.swift in Sources */,
+				E67D27B32BBF26C5006E8CD4 /* BugSubmissionViewModel.swift in Sources */,
 				E67D27962BBF0768006E8CD4 /* ReportItApp.swift in Sources */,
 				E67D27AA2BBF0FA3006E8CD4 /* ImagePicker.swift in Sources */,
 				E67D27A62BBF0858006E8CD4 /* BugSubmissionView.swift in Sources */,
