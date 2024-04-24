@@ -8,8 +8,13 @@
 import Foundation
 import SwiftUI
 import bug_api
+import Firebase
 
 public class BugSubmissionViewModel: ObservableObject {
+    
+    public init() {
+        FirebaseApp.configure()
+    }
     
     public func submitBug(_ bug: Bug) {
         guard let image = bug.image else {
