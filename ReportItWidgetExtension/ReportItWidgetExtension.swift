@@ -9,23 +9,23 @@ import WidgetKit
 import SwiftUI
 
 struct Provider: TimelineProvider {
-    func placeholder(in context: Context) -> SimpleEntry {
-        SimpleEntry(date: Date(), emoji: "😀")
+    func placeholder(in context: Context) -> BugsNumberEntry {
+        BugsNumberEntry(date: Date(), bugsNumber: 8)
     }
 
-    func getSnapshot(in context: Context, completion: @escaping (SimpleEntry) -> ()) {
-        let entry = SimpleEntry(date: Date(), emoji: "😀")
+    func getSnapshot(in context: Context, completion: @escaping (BugsNumberEntry) -> ()) {
+        let entry = BugsNumberEntry(date: Date(), bugsNumber: 8)
         completion(entry)
     }
 
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [SimpleEntry] = []
+        var entries: [BugsNumberEntry] = []
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
         for hourOffset in 0 ..< 5 {
             let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = SimpleEntry(date: entryDate, emoji: "😀")
+            let entry = BugsNumberEntry(date: entryDate, bugsNumber: 8)
             entries.append(entry)
         }
 
@@ -34,9 +34,9 @@ struct Provider: TimelineProvider {
     }
 }
 
-struct SimpleEntry: TimelineEntry {
+struct BugsNumberEntry: TimelineEntry {
     let date: Date
-    let emoji: String
+    let bugsNumber: Int
 }
 
 struct ReportItWidgetExtensionEntryView : View {
@@ -47,7 +47,7 @@ struct ReportItWidgetExtensionEntryView : View {
             VStack(alignment: .leading) {
                 Text("Bugs")
 
-                Text("8")
+                Text("\(entry.bugsNumber)")
                     .font(.title)
                     .bold()
 
@@ -83,6 +83,6 @@ struct ReportItWidgetExtension: Widget {
 #Preview(as: .systemSmall) {
     ReportItWidgetExtension()
 } timeline: {
-    SimpleEntry(date: .now, emoji: "😀")
-    SimpleEntry(date: .now, emoji: "🤩")
+    BugsNumberEntry(date: .now, bugsNumber: 8)
+    BugsNumberEntry(date: .now, bugsNumber: 8)
 }
