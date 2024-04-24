@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E65420D22BD8C6A700EDADB4 /* ScreenSizingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420D12BD8C6A700EDADB4 /* ScreenSizingHelpers.swift */; };
+		E65420DA2BD8D0BF00EDADB4 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420D92BD8D0BF00EDADB4 /* ShareViewController.swift */; };
+		E65420DD2BD8D0BF00EDADB4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E65420DC2BD8D0BF00EDADB4 /* Base */; };
+		E65420E12BD8D0BF00EDADB4 /* ReportItShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E65420D72BD8D0BF00EDADB4 /* ReportItShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E67D27962BBF0768006E8CD4 /* ReportItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27952BBF0768006E8CD4 /* ReportItApp.swift */; };
 		E67D27982BBF0768006E8CD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27972BBF0768006E8CD4 /* ContentView.swift */; };
 		E67D279A2BBF076A006E8CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67D27992BBF076A006E8CD4 /* Assets.xcassets */; };
@@ -21,8 +24,36 @@
 		E67D27B32BBF26C5006E8CD4 /* BugSubmissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		E65420DF2BD8D0BF00EDADB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E67D278A2BBF0768006E8CD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E65420D62BD8D0BF00EDADB4;
+			remoteInfo = ReportItShareExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E65420E52BD8D0BF00EDADB4 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E65420E12BD8D0BF00EDADB4 /* ReportItShareExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		E65420D12BD8C6A700EDADB4 /* ScreenSizingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSizingHelpers.swift; sourceTree = "<group>"; };
+		E65420D72BD8D0BF00EDADB4 /* ReportItShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReportItShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E65420D92BD8D0BF00EDADB4 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		E65420DC2BD8D0BF00EDADB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		E65420DE2BD8D0BF00EDADB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E67D27922BBF0768006E8CD4 /* ReportIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReportIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67D27952BBF0768006E8CD4 /* ReportItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportItApp.swift; sourceTree = "<group>"; };
 		E67D27972BBF0768006E8CD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -37,6 +68,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		E65420D42BD8D0BF00EDADB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E67D278F2BBF0768006E8CD4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -48,10 +86,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E65420D82BD8D0BF00EDADB4 /* ReportItShareExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E65420D92BD8D0BF00EDADB4 /* ShareViewController.swift */,
+				E65420DB2BD8D0BF00EDADB4 /* MainInterface.storyboard */,
+				E65420DE2BD8D0BF00EDADB4 /* Info.plist */,
+			);
+			path = ReportItShareExtension;
+			sourceTree = "<group>";
+		};
 		E67D27892BBF0768006E8CD4 = {
 			isa = PBXGroup;
 			children = (
 				E67D27942BBF0768006E8CD4 /* ReportIt */,
+				E65420D82BD8D0BF00EDADB4 /* ReportItShareExtension */,
 				E67D27932BBF0768006E8CD4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -60,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				E67D27922BBF0768006E8CD4 /* ReportIt.app */,
+				E65420D72BD8D0BF00EDADB4 /* ReportItShareExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,6 +159,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		E65420D62BD8D0BF00EDADB4 /* ReportItShareExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E65420E22BD8D0BF00EDADB4 /* Build configuration list for PBXNativeTarget "ReportItShareExtension" */;
+			buildPhases = (
+				E65420D32BD8D0BF00EDADB4 /* Sources */,
+				E65420D42BD8D0BF00EDADB4 /* Frameworks */,
+				E65420D52BD8D0BF00EDADB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReportItShareExtension;
+			productName = ReportItShareExtension;
+			productReference = E65420D72BD8D0BF00EDADB4 /* ReportItShareExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E67D27912BBF0768006E8CD4 /* ReportIt */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E67D27A02BBF076A006E8CD4 /* Build configuration list for PBXNativeTarget "ReportIt" */;
@@ -116,10 +183,12 @@
 				E67D278E2BBF0768006E8CD4 /* Sources */,
 				E67D278F2BBF0768006E8CD4 /* Frameworks */,
 				E67D27902BBF0768006E8CD4 /* Resources */,
+				E65420E52BD8D0BF00EDADB4 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E65420E02BD8D0BF00EDADB4 /* PBXTargetDependency */,
 			);
 			name = ReportIt;
 			packageProductDependencies = (
@@ -139,6 +208,9 @@
 				LastSwiftUpdateCheck = 1530;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					E65420D62BD8D0BF00EDADB4 = {
+						CreatedOnToolsVersion = 15.3;
+					};
 					E67D27912BBF0768006E8CD4 = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -161,11 +233,20 @@
 			projectRoot = "";
 			targets = (
 				E67D27912BBF0768006E8CD4 /* ReportIt */,
+				E65420D62BD8D0BF00EDADB4 /* ReportItShareExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		E65420D52BD8D0BF00EDADB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65420DD2BD8D0BF00EDADB4 /* Base in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E67D27902BBF0768006E8CD4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -179,6 +260,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		E65420D32BD8D0BF00EDADB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65420DA2BD8D0BF00EDADB4 /* ShareViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E67D278E2BBF0768006E8CD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -196,7 +285,76 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		E65420E02BD8D0BF00EDADB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E65420D62BD8D0BF00EDADB4 /* ReportItShareExtension */;
+			targetProxy = E65420DF2BD8D0BF00EDADB4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E65420DB2BD8D0BF00EDADB4 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E65420DC2BD8D0BF00EDADB4 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		E65420E32BD8D0BF00EDADB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 448W6TL3PT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReportItShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReportItShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dania.ReportIt.ReportItShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E65420E42BD8D0BF00EDADB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 448W6TL3PT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReportItShareExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReportItShareExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dania.ReportIt.ReportItShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		E67D279E2BBF076A006E8CD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -319,6 +477,7 @@
 		E67D27A12BBF076A006E8CD4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -348,6 +507,7 @@
 		E67D27A22BBF076A006E8CD4 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -377,6 +537,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		E65420E22BD8D0BF00EDADB4 /* Build configuration list for PBXNativeTarget "ReportItShareExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E65420E32BD8D0BF00EDADB4 /* Debug */,
+				E65420E42BD8D0BF00EDADB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E67D278D2BBF0768006E8CD4 /* Build configuration list for PBXProject "ReportIt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
