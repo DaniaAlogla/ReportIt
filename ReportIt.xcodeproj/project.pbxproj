@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		E65420D22BD8C6A700EDADB4 /* ScreenSizingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420D12BD8C6A700EDADB4 /* ScreenSizingHelpers.swift */; };
 		E65420DA2BD8D0BF00EDADB4 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420D92BD8D0BF00EDADB4 /* ShareViewController.swift */; };
-		E65420DD2BD8D0BF00EDADB4 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = E65420DC2BD8D0BF00EDADB4 /* Base */; };
 		E65420E12BD8D0BF00EDADB4 /* ReportItShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E65420D72BD8D0BF00EDADB4 /* ReportItShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E67D27962BBF0768006E8CD4 /* ReportItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27952BBF0768006E8CD4 /* ReportItApp.swift */; };
 		E67D27982BBF0768006E8CD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27972BBF0768006E8CD4 /* ContentView.swift */; };
@@ -52,7 +51,6 @@
 		E65420D12BD8C6A700EDADB4 /* ScreenSizingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSizingHelpers.swift; sourceTree = "<group>"; };
 		E65420D72BD8D0BF00EDADB4 /* ReportItShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReportItShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65420D92BD8D0BF00EDADB4 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
-		E65420DC2BD8D0BF00EDADB4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
 		E65420DE2BD8D0BF00EDADB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E67D27922BBF0768006E8CD4 /* ReportIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReportIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67D27952BBF0768006E8CD4 /* ReportItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportItApp.swift; sourceTree = "<group>"; };
@@ -90,7 +88,6 @@
 			isa = PBXGroup;
 			children = (
 				E65420D92BD8D0BF00EDADB4 /* ShareViewController.swift */,
-				E65420DB2BD8D0BF00EDADB4 /* MainInterface.storyboard */,
 				E65420DE2BD8D0BF00EDADB4 /* Info.plist */,
 			);
 			path = ReportItShareExtension;
@@ -243,7 +240,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E65420DD2BD8D0BF00EDADB4 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,17 +288,6 @@
 			targetProxy = E65420DF2BD8D0BF00EDADB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		E65420DB2BD8D0BF00EDADB4 /* MainInterface.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E65420DC2BD8D0BF00EDADB4 /* Base */,
-			);
-			name = MainInterface.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		E65420E32BD8D0BF00EDADB4 /* Debug */ = {
