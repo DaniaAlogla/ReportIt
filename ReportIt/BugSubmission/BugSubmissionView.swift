@@ -39,7 +39,9 @@ struct BugSubmissionView: View {
             }
             .frame(height: screenHeight * 0.3)
             
-            TextField("Please describe the bug", text: $bug.description, axis: .vertical)
+            TextField("Please describe the bug",
+                      text: $bug.description,
+                      axis: .vertical)
                 .lineLimit(3...6)
                 .textFieldStyle(.roundedBorder)
             
