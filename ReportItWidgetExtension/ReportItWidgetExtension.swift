@@ -43,12 +43,20 @@ struct ReportItWidgetExtensionEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
+        HStack{
+            VStack(alignment: .leading) {
+                Text("Bugs")
 
-            Text("Emoji:")
-            Text(entry.emoji)
+                Text("8")
+                    .font(.title)
+                    .bold()
+
+                Spacer()
+                
+                Image(systemName: "ladybug.fill")
+                    .font(.headline)
+            }
+            Spacer()
         }
     }
 }
