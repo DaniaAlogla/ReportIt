@@ -24,10 +24,14 @@ struct WelcomingView: View {
                 Button {
                     showBugSubmissionView.toggle()
                 } label: {
-                    Text("report a bug")
+                    Text("Report a bug")
+                        .bold()
+                        .frame(maxWidth: .infinity)
                 }
+                .buttonStyle(.borderedProminent)
                 
-            }.navigationDestination(isPresented: $showBugSubmissionView) {
+            }.padding()
+            .navigationDestination(isPresented: $showBugSubmissionView) {
                 BugSubmissionView()
             }
         }
