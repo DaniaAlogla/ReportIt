@@ -26,7 +26,17 @@ class ShareViewController: UIViewController {
             }
             
             if let url = providedImage as? URL {
-            
+                if let imageData = try? Data(contentsOf: url) {
+                    if let _ = UIImage(data: imageData) {
+                        
+                    } else {
+                        self.closeShareExtension()
+                        return
+                    }
+                } else {
+                    self.closeShareExtension()
+                    return
+                }
             } else {
                 self.closeShareExtension()
                 return
