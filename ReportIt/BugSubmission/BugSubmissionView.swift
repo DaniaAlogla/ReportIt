@@ -7,9 +7,6 @@
 
 import SwiftUI
 
-public let screenWidth = UIScreen.main.bounds.width
-public let screenHeight   = UIScreen.main.bounds.height
-
 struct BugSubmissionView: View {
     
     @ObservedObject var bugSubmissionViewModel = BugSubmissionViewModel()

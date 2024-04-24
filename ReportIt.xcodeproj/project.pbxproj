@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E65420D22BD8C6A700EDADB4 /* ScreenSizingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420D12BD8C6A700EDADB4 /* ScreenSizingHelpers.swift */; };
 		E67D27962BBF0768006E8CD4 /* ReportItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27952BBF0768006E8CD4 /* ReportItApp.swift */; };
 		E67D27982BBF0768006E8CD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27972BBF0768006E8CD4 /* ContentView.swift */; };
 		E67D279A2BBF076A006E8CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67D27992BBF076A006E8CD4 /* Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E65420D12BD8C6A700EDADB4 /* ScreenSizingHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenSizingHelpers.swift; sourceTree = "<group>"; };
 		E67D27922BBF0768006E8CD4 /* ReportIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReportIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67D27952BBF0768006E8CD4 /* ReportItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportItApp.swift; sourceTree = "<group>"; };
 		E67D27972BBF0768006E8CD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */,
+				E65420D12BD8C6A700EDADB4 /* ScreenSizingHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -183,6 +186,7 @@
 				E67D27A42BBF079B006E8CD4 /* WelcomingView.swift in Sources */,
 				E67D27982BBF0768006E8CD4 /* ContentView.swift in Sources */,
 				E67D27B32BBF26C5006E8CD4 /* BugSubmissionViewModel.swift in Sources */,
+				E65420D22BD8C6A700EDADB4 /* ScreenSizingHelpers.swift in Sources */,
 				E67D27962BBF0768006E8CD4 /* ReportItApp.swift in Sources */,
 				E67D27AA2BBF0FA3006E8CD4 /* ImagePicker.swift in Sources */,
 				E67D27A62BBF0858006E8CD4 /* BugSubmissionView.swift in Sources */,
