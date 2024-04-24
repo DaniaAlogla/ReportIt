@@ -7,30 +7,36 @@
 
 import WidgetKit
 import SwiftUI
+import bug_api
 
 struct Provider: TimelineProvider {
     func placeholder(in context: Context) -> BugsNumberEntry {
         BugsNumberEntry(date: Date(), bugsNumber: 8)
     }
-
+    
     func getSnapshot(in context: Context, completion: @escaping (BugsNumberEntry) -> ()) {
         let entry = BugsNumberEntry(date: Date(), bugsNumber: 8)
         completion(entry)
     }
-
+    
     func getTimeline(in context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
-        var entries: [BugsNumberEntry] = []
-
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date.
-        let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
-            let entry = BugsNumberEntry(date: entryDate, bugsNumber: 8)
-            entries.append(entry)
+        fetchNumberOfBugs { retrievedNumberOfBugs in
+            guard let retrievedNumberOfBugs = retrievedNumberOfBugs else { return }
+            
+            let data = BugsNumberEntry(date: Date(), bugsNumber: retrievedNumberOfBugs.bugsNumber)
+            let timeline = Timeline(entries: [data], policy: .atEnd)
+            completion(timeline)
         }
-
-        let timeline = Timeline(entries: entries, policy: .atEnd)
-        completion(timeline)
+    }
+    
+    private func fetchNumberOfBugs(completion: @escaping (BugsNumberEntry?) -> Void) {
+        RemoteBugsManager.shared.getNumberOfBugs { retrievedNumberOfBugs, error in
+            if error == nil {
+                if let retrievedNumberOfBugs {
+                    completion(BugsNumberEntry(date: Date(), bugsNumber: retrievedNumberOfBugs))
+                }
+            }
+        }
     }
 }
 
@@ -41,16 +47,16 @@ struct BugsNumberEntry: TimelineEntry {
 
 struct ReportItWidgetExtensionEntryView : View {
     var entry: Provider.Entry
-
+    
     var body: some View {
         HStack{
             VStack(alignment: .leading) {
                 Text("Bugs")
-
+                
                 Text("\(entry.bugsNumber)")
                     .font(.title)
                     .bold()
-
+                
                 Spacer()
                 
                 Image(systemName: "ladybug.fill")
@@ -63,7 +69,7 @@ struct ReportItWidgetExtensionEntryView : View {
 
 struct ReportItWidgetExtension: Widget {
     let kind: String = "ReportItWidgetExtension"
-
+    
     var body: some WidgetConfiguration {
         StaticConfiguration(kind: kind, provider: Provider()) { entry in
             if #available(iOS 17.0, *) {
