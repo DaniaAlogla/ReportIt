@@ -12,36 +12,54 @@ struct BugSubmissionView: View {
     @ObservedObject var bugSubmissionViewModel = BugSubmissionViewModel()
     @State private var bug = Bug(description: "", image: nil)
     @State private var showImagePicker = false
-
+    
     var body: some View {
-        VStack {
-            Form {
-                Section(header: Text("Bug Details")) {
-                    TextField("Description", text: $bug.description)
-                    if let image = bug.image {
-                        Image(uiImage: image)
-                            .resizable()
-                            .aspectRatio(contentMode: .fit)
-                            .frame(height: 200)
-                    }
+        VStack(spacing: 20){
+            ZStack {
+                RoundedRectangle(cornerRadius: 4)
+                    .stroke(Color(UIColor(red: 233/255,
+                                          green: 233/255,
+                                          blue: 233/255,
+                                          alpha: 1))
+                            , lineWidth: 1)
+                
+                if let image = bug.image {
+                    Image(uiImage: image)
+                        .resizable()
+                        .frame(height: UIScreen.main.bounds.height * 0.3)
+                        .clipShape(RoundedRectangle(cornerRadius: 4))
+                } else {
                     Button(action: {
                         showImagePicker.toggle()
                     }) {
-                        Text("Add Image")
+                        Text("Select Image")
+                            .frame(height: UIScreen.main.bounds.height * 0.3)
                     }
                 }
-            }
+            }.frame(height: UIScreen.main.bounds.height * 0.3)
+            
+            TextField("Please describe the bug", text: $bug.description, axis: .vertical)
+                .lineLimit(3...6)
+                .textFieldStyle(.roundedBorder)
+            
             Button {
                 bugSubmissionViewModel.submitBug(bug)
                 bug = Bug(description: "", image: nil)
             } label: {
                 Text("Submit")
+                    .bold()
+                    .frame(maxWidth: .infinity)
             }
-        }.navigationTitle("Bug Submission")
-        .navigationBarTitleDisplayMode(.large)
-        .sheet(isPresented: $showImagePicker) {
-            ImagePicker(image: $bug.image)
-        }
+            .buttonStyle(.borderedProminent)
+            
+            Spacer()
+            
+        }.padding()
+            .navigationTitle("Bug Submission")
+            .navigationBarTitleDisplayMode(.large)
+            .sheet(isPresented: $showImagePicker) {
+                ImagePicker(image: $bug.image)
+            }
     }
 }
 
