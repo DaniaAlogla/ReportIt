@@ -10,6 +10,13 @@
 		E65420D22BD8C6A700EDADB4 /* ScreenSizingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420D12BD8C6A700EDADB4 /* ScreenSizingHelpers.swift */; };
 		E65420DA2BD8D0BF00EDADB4 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420D92BD8D0BF00EDADB4 /* ShareViewController.swift */; };
 		E65420E12BD8D0BF00EDADB4 /* ReportItShareExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E65420D72BD8D0BF00EDADB4 /* ReportItShareExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E65420E72BD8DBD800EDADB4 /* BugSubmissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27A52BBF0858006E8CD4 /* BugSubmissionView.swift */; };
+		E65420E82BD8DE7800EDADB4 /* BugSubmissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */; };
+		E65420EB2BD8DEB100EDADB4 /* bug-api in Frameworks */ = {isa = PBXBuildFile; productRef = E65420EA2BD8DEB100EDADB4 /* bug-api */; };
+		E65420EC2BD8DED000EDADB4 /* Bug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27A72BBF0A15006E8CD4 /* Bug.swift */; };
+		E65420ED2BD8DEDB00EDADB4 /* ScreenSizingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420D12BD8C6A700EDADB4 /* ScreenSizingHelpers.swift */; };
+		E65420EE2BD8DEE400EDADB4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */; };
+		E65420F42BD8E96200EDADB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E65420F32BD8E96200EDADB4 /* GoogleService-Info.plist */; };
 		E67D27962BBF0768006E8CD4 /* ReportItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27952BBF0768006E8CD4 /* ReportItApp.swift */; };
 		E67D27982BBF0768006E8CD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27972BBF0768006E8CD4 /* ContentView.swift */; };
 		E67D279A2BBF076A006E8CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67D27992BBF076A006E8CD4 /* Assets.xcassets */; };
@@ -52,6 +59,7 @@
 		E65420D72BD8D0BF00EDADB4 /* ReportItShareExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReportItShareExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		E65420D92BD8D0BF00EDADB4 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		E65420DE2BD8D0BF00EDADB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E65420F32BD8E96200EDADB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E67D27922BBF0768006E8CD4 /* ReportIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReportIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67D27952BBF0768006E8CD4 /* ReportItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportItApp.swift; sourceTree = "<group>"; };
 		E67D27972BBF0768006E8CD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65420EB2BD8DEB100EDADB4 /* bug-api in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +98,16 @@
 			children = (
 				E65420D92BD8D0BF00EDADB4 /* ShareViewController.swift */,
 				E65420DE2BD8D0BF00EDADB4 /* Info.plist */,
+				E65420F32BD8E96200EDADB4 /* GoogleService-Info.plist */,
 			);
 			path = ReportItShareExtension;
+			sourceTree = "<group>";
+		};
+		E65420E92BD8DEB100EDADB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		E67D27892BBF0768006E8CD4 = {
@@ -99,6 +116,7 @@
 				E67D27942BBF0768006E8CD4 /* ReportIt */,
 				E65420D82BD8D0BF00EDADB4 /* ReportItShareExtension */,
 				E67D27932BBF0768006E8CD4 /* Products */,
+				E65420E92BD8DEB100EDADB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -169,6 +187,9 @@
 			dependencies = (
 			);
 			name = ReportItShareExtension;
+			packageProductDependencies = (
+				E65420EA2BD8DEB100EDADB4 /* bug-api */,
+			);
 			productName = ReportItShareExtension;
 			productReference = E65420D72BD8D0BF00EDADB4 /* ReportItShareExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -240,6 +261,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E65420F42BD8E96200EDADB4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +283,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				E65420DA2BD8D0BF00EDADB4 /* ShareViewController.swift in Sources */,
+				E65420E72BD8DBD800EDADB4 /* BugSubmissionView.swift in Sources */,
+				E65420ED2BD8DEDB00EDADB4 /* ScreenSizingHelpers.swift in Sources */,
+				E65420EE2BD8DEE400EDADB4 /* ImagePicker.swift in Sources */,
+				E65420EC2BD8DED000EDADB4 /* Bug.swift in Sources */,
+				E65420E82BD8DE7800EDADB4 /* BugSubmissionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,6 +590,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		E65420EA2BD8DEB100EDADB4 /* bug-api */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E67D27AB2BBF159A006E8CD4 /* XCRemoteSwiftPackageReference "bug-api" */;
+			productName = "bug-api";
+		};
 		E67D27AC2BBF159A006E8CD4 /* bug-api */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E67D27AB2BBF159A006E8CD4 /* XCRemoteSwiftPackageReference "bug-api" */;

@@ -10,7 +10,8 @@ import SwiftUI
 struct BugSubmissionView: View {
     
     @ObservedObject var bugSubmissionViewModel = BugSubmissionViewModel()
-    @State private var bug = Bug(description: "", image: nil)
+    @State var image : UIImage?
+    @State private var description = ""
     @State private var showImagePicker = false
     
     var body: some View {
@@ -23,7 +24,7 @@ struct BugSubmissionView: View {
                                           alpha: 1))
                             , lineWidth: 1)
                 
-                if let image = bug.image {
+                if let image = image {
                     Image(uiImage: image)
                         .resizable()
                         .frame(height: screenHeight * 0.3)
@@ -40,14 +41,13 @@ struct BugSubmissionView: View {
             .frame(height: screenHeight * 0.3)
             
             TextField("Please describe the bug",
-                      text: $bug.description,
+                      text: $description,
                       axis: .vertical)
                 .lineLimit(3...6)
                 .textFieldStyle(.roundedBorder)
             
             Button {
-                bugSubmissionViewModel.submitBug(bug)
-                bug = Bug(description: "", image: nil)
+                bugSubmissionViewModel.submitBug(Bug(description: description, image: image))
             } label: {
                 Text("Submit")
                     .bold()
@@ -61,7 +61,7 @@ struct BugSubmissionView: View {
             .navigationTitle("Bug Submission")
             .navigationBarTitleDisplayMode(.automatic)
             .sheet(isPresented: $showImagePicker) {
-                ImagePicker(image: $bug.image)
+                ImagePicker(image: $image)
             }
     }
 }
