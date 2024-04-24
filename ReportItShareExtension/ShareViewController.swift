@@ -22,7 +22,7 @@ class ShareViewController: UIViewController {
         }
         
         itemProvider.loadItem(forTypeIdentifier: UTType.image.identifier, options: nil) { (providedImage, error) in
-            if let error = error {
+            if error != nil {
                 self.closeShareExtension()
                 return
             }
