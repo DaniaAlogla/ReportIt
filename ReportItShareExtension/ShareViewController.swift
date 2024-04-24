@@ -15,9 +15,27 @@ class ShareViewController: UIViewController {
         
         guard
             let extensionItem = extensionContext?.inputItems.first as? NSExtensionItem,
-            let _ = extensionItem.attachments?.first else {
+            let itemProvider = extensionItem.attachments?.first else {
             return
         }
+        
+        itemProvider.loadItem(forTypeIdentifier: "public.image", options: nil) { (providedImage, error) in
+            if let error = error {
+                self.closeShareExtension()
+                return
+            }
+            
+            if let url = providedImage as? URL {
+            
+            } else {
+                self.closeShareExtension()
+                return
+            }
+        }
     }
-
+    
+    private func closeShareExtension() {
+        self.extensionContext?.completeRequest(returningItems: [], completionHandler: nil)
+    }
+    
 }
