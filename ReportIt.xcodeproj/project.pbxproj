@@ -17,6 +17,12 @@
 		E65420ED2BD8DEDB00EDADB4 /* ScreenSizingHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420D12BD8C6A700EDADB4 /* ScreenSizingHelpers.swift */; };
 		E65420EE2BD8DEE400EDADB4 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */; };
 		E65420F42BD8E96200EDADB4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E65420F32BD8E96200EDADB4 /* GoogleService-Info.plist */; };
+		E65420FB2BD90D1D00EDADB4 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65420FA2BD90D1D00EDADB4 /* WidgetKit.framework */; };
+		E65420FD2BD90D1D00EDADB4 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E65420FC2BD90D1D00EDADB4 /* SwiftUI.framework */; };
+		E65421002BD90D1D00EDADB4 /* ReportItWidgetExtensionBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65420FF2BD90D1D00EDADB4 /* ReportItWidgetExtensionBundle.swift */; };
+		E65421022BD90D1D00EDADB4 /* ReportItWidgetExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E65421012BD90D1D00EDADB4 /* ReportItWidgetExtension.swift */; };
+		E65421042BD90D1F00EDADB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E65421032BD90D1F00EDADB4 /* Assets.xcassets */; };
+		E65421082BD90D1F00EDADB4 /* ReportItWidgetExtensionExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = E65420F92BD90D1D00EDADB4 /* ReportItWidgetExtensionExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		E67D27962BBF0768006E8CD4 /* ReportItApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27952BBF0768006E8CD4 /* ReportItApp.swift */; };
 		E67D27982BBF0768006E8CD4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27972BBF0768006E8CD4 /* ContentView.swift */; };
 		E67D279A2BBF076A006E8CD4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E67D27992BBF076A006E8CD4 /* Assets.xcassets */; };
@@ -28,6 +34,7 @@
 		E67D27AD2BBF159A006E8CD4 /* bug-api in Frameworks */ = {isa = PBXBuildFile; productRef = E67D27AC2BBF159A006E8CD4 /* bug-api */; };
 		E67D27B12BBF185D006E8CD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E67D27B02BBF185D006E8CD4 /* GoogleService-Info.plist */; };
 		E67D27B32BBF26C5006E8CD4 /* BugSubmissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */; };
+		E6E5B7BB2BD92EDC00A81587 /* bug-api in Frameworks */ = {isa = PBXBuildFile; productRef = E6E5B7BA2BD92EDC00A81587 /* bug-api */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +44,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = E65420D62BD8D0BF00EDADB4;
 			remoteInfo = ReportItShareExtension;
+		};
+		E65421062BD90D1F00EDADB4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E67D278A2BBF0768006E8CD4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E65420F82BD90D1D00EDADB4;
+			remoteInfo = ReportItWidgetExtensionExtension;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -48,6 +62,7 @@
 			dstSubfolderSpec = 13;
 			files = (
 				E65420E12BD8D0BF00EDADB4 /* ReportItShareExtension.appex in Embed Foundation Extensions */,
+				E65421082BD90D1F00EDADB4 /* ReportItWidgetExtensionExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -60,6 +75,13 @@
 		E65420D92BD8D0BF00EDADB4 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		E65420DE2BD8D0BF00EDADB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E65420F32BD8E96200EDADB4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E65420F92BD90D1D00EDADB4 /* ReportItWidgetExtensionExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = ReportItWidgetExtensionExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E65420FA2BD90D1D00EDADB4 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E65420FC2BD90D1D00EDADB4 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E65420FF2BD90D1D00EDADB4 /* ReportItWidgetExtensionBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportItWidgetExtensionBundle.swift; sourceTree = "<group>"; };
+		E65421012BD90D1D00EDADB4 /* ReportItWidgetExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportItWidgetExtension.swift; sourceTree = "<group>"; };
+		E65421032BD90D1F00EDADB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E65421052BD90D1F00EDADB4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E67D27922BBF0768006E8CD4 /* ReportIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReportIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E67D27952BBF0768006E8CD4 /* ReportItApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportItApp.swift; sourceTree = "<group>"; };
 		E67D27972BBF0768006E8CD4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -79,6 +101,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				E65420EB2BD8DEB100EDADB4 /* bug-api in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65420F62BD90D1D00EDADB4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E6E5B7BB2BD92EDC00A81587 /* bug-api in Frameworks */,
+				E65420FD2BD90D1D00EDADB4 /* SwiftUI.framework in Frameworks */,
+				E65420FB2BD90D1D00EDADB4 /* WidgetKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,8 +138,21 @@
 		E65420E92BD8DEB100EDADB4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E65420FA2BD90D1D00EDADB4 /* WidgetKit.framework */,
+				E65420FC2BD90D1D00EDADB4 /* SwiftUI.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E65420FE2BD90D1D00EDADB4 /* ReportItWidgetExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E65420FF2BD90D1D00EDADB4 /* ReportItWidgetExtensionBundle.swift */,
+				E65421012BD90D1D00EDADB4 /* ReportItWidgetExtension.swift */,
+				E65421032BD90D1F00EDADB4 /* Assets.xcassets */,
+				E65421052BD90D1F00EDADB4 /* Info.plist */,
+			);
+			path = ReportItWidgetExtension;
 			sourceTree = "<group>";
 		};
 		E67D27892BBF0768006E8CD4 = {
@@ -115,6 +160,7 @@
 			children = (
 				E67D27942BBF0768006E8CD4 /* ReportIt */,
 				E65420D82BD8D0BF00EDADB4 /* ReportItShareExtension */,
+				E65420FE2BD90D1D00EDADB4 /* ReportItWidgetExtension */,
 				E67D27932BBF0768006E8CD4 /* Products */,
 				E65420E92BD8DEB100EDADB4 /* Frameworks */,
 			);
@@ -125,6 +171,7 @@
 			children = (
 				E67D27922BBF0768006E8CD4 /* ReportIt.app */,
 				E65420D72BD8D0BF00EDADB4 /* ReportItShareExtension.appex */,
+				E65420F92BD90D1D00EDADB4 /* ReportItWidgetExtensionExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,6 +241,26 @@
 			productReference = E65420D72BD8D0BF00EDADB4 /* ReportItShareExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
+		E65420F82BD90D1D00EDADB4 /* ReportItWidgetExtensionExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E65421092BD90D1F00EDADB4 /* Build configuration list for PBXNativeTarget "ReportItWidgetExtensionExtension" */;
+			buildPhases = (
+				E65420F52BD90D1D00EDADB4 /* Sources */,
+				E65420F62BD90D1D00EDADB4 /* Frameworks */,
+				E65420F72BD90D1D00EDADB4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReportItWidgetExtensionExtension;
+			packageProductDependencies = (
+				E6E5B7BA2BD92EDC00A81587 /* bug-api */,
+			);
+			productName = ReportItWidgetExtensionExtension;
+			productReference = E65420F92BD90D1D00EDADB4 /* ReportItWidgetExtensionExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		E67D27912BBF0768006E8CD4 /* ReportIt */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = E67D27A02BBF076A006E8CD4 /* Build configuration list for PBXNativeTarget "ReportIt" */;
@@ -207,6 +274,7 @@
 			);
 			dependencies = (
 				E65420E02BD8D0BF00EDADB4 /* PBXTargetDependency */,
+				E65421072BD90D1F00EDADB4 /* PBXTargetDependency */,
 			);
 			name = ReportIt;
 			packageProductDependencies = (
@@ -227,6 +295,9 @@
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					E65420D62BD8D0BF00EDADB4 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					E65420F82BD90D1D00EDADB4 = {
 						CreatedOnToolsVersion = 15.3;
 					};
 					E67D27912BBF0768006E8CD4 = {
@@ -252,6 +323,7 @@
 			targets = (
 				E67D27912BBF0768006E8CD4 /* ReportIt */,
 				E65420D62BD8D0BF00EDADB4 /* ReportItShareExtension */,
+				E65420F82BD90D1D00EDADB4 /* ReportItWidgetExtensionExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -262,6 +334,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				E65420F42BD8E96200EDADB4 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E65420F72BD90D1D00EDADB4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65421042BD90D1F00EDADB4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +371,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E65420F52BD90D1D00EDADB4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E65421022BD90D1D00EDADB4 /* ReportItWidgetExtension.swift in Sources */,
+				E65421002BD90D1D00EDADB4 /* ReportItWidgetExtensionBundle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E67D278E2BBF0768006E8CD4 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -313,6 +402,11 @@
 			isa = PBXTargetDependency;
 			target = E65420D62BD8D0BF00EDADB4 /* ReportItShareExtension */;
 			targetProxy = E65420DF2BD8D0BF00EDADB4 /* PBXContainerItemProxy */;
+		};
+		E65421072BD90D1F00EDADB4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E65420F82BD90D1D00EDADB4 /* ReportItWidgetExtensionExtension */;
+			targetProxy = E65421062BD90D1F00EDADB4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -359,6 +453,60 @@
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.dania.ReportIt.ReportItShareExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E654210A2BD90D1F00EDADB4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 448W6TL3PT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReportItWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReportItWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dania.ReportIt.ReportItWidgetExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E654210B2BD90D1F00EDADB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 448W6TL3PT;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ReportItWidgetExtension/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = ReportItWidgetExtension;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.dania.ReportIt.ReportItWidgetExtension;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -558,6 +706,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		E65421092BD90D1F00EDADB4 /* Build configuration list for PBXNativeTarget "ReportItWidgetExtensionExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E654210A2BD90D1F00EDADB4 /* Debug */,
+				E654210B2BD90D1F00EDADB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		E67D278D2BBF0768006E8CD4 /* Build configuration list for PBXProject "ReportIt" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -596,6 +753,11 @@
 			productName = "bug-api";
 		};
 		E67D27AC2BBF159A006E8CD4 /* bug-api */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = E67D27AB2BBF159A006E8CD4 /* XCRemoteSwiftPackageReference "bug-api" */;
+			productName = "bug-api";
+		};
+		E6E5B7BA2BD92EDC00A81587 /* bug-api */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = E67D27AB2BBF159A006E8CD4 /* XCRemoteSwiftPackageReference "bug-api" */;
 			productName = "bug-api";
