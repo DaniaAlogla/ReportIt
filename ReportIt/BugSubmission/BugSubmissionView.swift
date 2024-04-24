@@ -7,6 +7,9 @@
 
 import SwiftUI
 
+public let screenWidth = UIScreen.main.bounds.width
+public let screenHeight   = UIScreen.main.bounds.height
+
 struct BugSubmissionView: View {
     
     @ObservedObject var bugSubmissionViewModel = BugSubmissionViewModel()
@@ -26,17 +29,18 @@ struct BugSubmissionView: View {
                 if let image = bug.image {
                     Image(uiImage: image)
                         .resizable()
-                        .frame(height: UIScreen.main.bounds.height * 0.3)
+                        .frame(height: screenHeight * 0.3)
                         .clipShape(RoundedRectangle(cornerRadius: 4))
                 } else {
                     Button(action: {
                         showImagePicker.toggle()
                     }) {
                         Text("Select Image")
-                            .frame(height: UIScreen.main.bounds.height * 0.3)
+                            .frame(height: screenHeight * 0.3)
                     }
                 }
-            }.frame(height: UIScreen.main.bounds.height * 0.3)
+            }
+            .frame(height: screenHeight * 0.3)
             
             TextField("Please describe the bug", text: $bug.description, axis: .vertical)
                 .lineLimit(3...6)
