@@ -56,7 +56,7 @@ struct BugSubmissionView: View {
             
         }.padding()
             .navigationTitle("Bug Submission")
-            .navigationBarTitleDisplayMode(.large)
+            .navigationBarTitleDisplayMode(.automatic)
             .sheet(isPresented: $showImagePicker) {
                 ImagePicker(image: $bug.image)
             }
