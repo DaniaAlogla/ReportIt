@@ -6,7 +6,7 @@ ReportIt is a Bug Tracking iOS application built using Swift and SwiftUI. The ap
 
 ## How to Install and Run the Project
 
-1. **Download the project via git or zip**:
+1. **Download the project via git or zip**
 
 2. **Open the folder**:
     - Navigate to the folder where the project was downloaded or cloned.
@@ -14,5 +14,5 @@ ReportIt is a Bug Tracking iOS application built using Swift and SwiftUI. The ap
 3. **Double-click on the .xcodeproj file**:
     - You will find a file with a `.xcodeproj` extension. Double-clicking it will open Xcode.
 
-4. **Run the app or the extension you choose**:
+4. **Run the app or the extension you choose**
  
