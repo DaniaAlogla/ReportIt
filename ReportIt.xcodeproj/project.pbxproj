@@ -36,6 +36,7 @@
 		E67D27B32BBF26C5006E8CD4 /* BugSubmissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */; };
 		E6B813A92BDA212400E60F4E /* LocalBugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B813A82BDA212400E60F4E /* LocalBugView.swift */; };
 		E6B813AB2BDA21C000E60F4E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B813AA2BDA21C000E60F4E /* HistoryView.swift */; };
+		E6B813AD2BDA2A4600E60F4E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E6B813AC2BDA2A4600E60F4E /* README.md */; };
 		E6E5B7BB2BD92EDC00A81587 /* bug-api in Frameworks */ = {isa = PBXBuildFile; productRef = E6E5B7BA2BD92EDC00A81587 /* bug-api */; };
 		E6E5B7BF2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */; };
 		E6E5B7C22BDA0C5300A81587 /* LocalBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */; };
@@ -108,6 +109,7 @@
 		E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionViewModel.swift; sourceTree = "<group>"; };
 		E6B813A82BDA212400E60F4E /* LocalBugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBugView.swift; sourceTree = "<group>"; };
 		E6B813AA2BDA21C000E60F4E /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		E6B813AC2BDA2A4600E60F4E /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionShareExtensionView.swift; sourceTree = "<group>"; };
 		E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBug.swift; sourceTree = "<group>"; };
 		E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsStore.swift; sourceTree = "<group>"; };
@@ -181,6 +183,7 @@
 		E67D27892BBF0768006E8CD4 = {
 			isa = PBXGroup;
 			children = (
+				E6B813AC2BDA2A4600E60F4E /* README.md */,
 				E67D27942BBF0768006E8CD4 /* ReportIt */,
 				E65420D82BD8D0BF00EDADB4 /* ReportItShareExtension */,
 				E65420FE2BD90D1D00EDADB4 /* ReportItWidgetExtension */,
@@ -390,6 +393,7 @@
 			files = (
 				E67D279D2BBF076A006E8CD4 /* Preview Assets.xcassets in Resources */,
 				E67D279A2BBF076A006E8CD4 /* Assets.xcassets in Resources */,
+				E6B813AD2BDA2A4600E60F4E /* README.md in Resources */,
 				E67D27B12BBF185D006E8CD4 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
