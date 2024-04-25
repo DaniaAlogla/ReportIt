@@ -38,6 +38,7 @@
 		E6E5B7BF2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */; };
 		E6E5B7C22BDA0C5300A81587 /* LocalBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */; };
 		E6E5B7C42BDA0D0700A81587 /* BugsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */; };
+		E6E5B7C72BDA0DDC00A81587 /* BugsStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C52BDA0DDC00A81587 /* BugsStore.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionShareExtensionView.swift; sourceTree = "<group>"; };
 		E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBug.swift; sourceTree = "<group>"; };
 		E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsStore.swift; sourceTree = "<group>"; };
+		E6E5B7C62BDA0DDC00A81587 /* BugsStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BugsStore.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +233,7 @@
 			children = (
 				E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */,
 				E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */,
+				E6E5B7C52BDA0DDC00A81587 /* BugsStore.xcdatamodeld */,
 			);
 			path = "Bugs Cache";
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 				E67D27A62BBF0858006E8CD4 /* BugSubmissionView.swift in Sources */,
 				E6E5B7C42BDA0D0700A81587 /* BugsStore.swift in Sources */,
 				E67D27A82BBF0A15006E8CD4 /* Bug.swift in Sources */,
+				E6E5B7C72BDA0DDC00A81587 /* BugsStore.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,6 +787,20 @@
 			productName = "bug-api";
 		};
 /* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		E6E5B7C52BDA0DDC00A81587 /* BugsStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				E6E5B7C62BDA0DDC00A81587 /* BugsStore.xcdatamodel */,
+			);
+			currentVersion = E6E5B7C62BDA0DDC00A81587 /* BugsStore.xcdatamodel */;
+			name = BugsStore.xcdatamodeld;
+			path = "/Users/daniaalogla/Desktop/Developer/ReportIt/ReportIt/Bugs Cache/BugsStore.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = E67D278A2BBF0768006E8CD4 /* Project object */;
 }
