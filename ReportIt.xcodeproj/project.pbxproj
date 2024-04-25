@@ -40,6 +40,7 @@
 		E6E5B7C42BDA0D0700A81587 /* BugsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */; };
 		E6E5B7C72BDA0DDC00A81587 /* BugsStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C52BDA0DDC00A81587 /* BugsStore.xcdatamodeld */; };
 		E6E5B7C92BDA0EE400A81587 /* CoreDataBugsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C82BDA0EE400A81587 /* CoreDataBugsStore.swift */; };
+		E6E5B7CB2BDA133900A81587 /* ManagedBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7CA2BDA133900A81587 /* ManagedBug.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsStore.swift; sourceTree = "<group>"; };
 		E6E5B7C62BDA0DDC00A81587 /* BugsStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BugsStore.xcdatamodel; sourceTree = "<group>"; };
 		E6E5B7C82BDA0EE400A81587 /* CoreDataBugsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBugsStore.swift; sourceTree = "<group>"; };
+		E6E5B7CA2BDA133900A81587 /* ManagedBug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedBug.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +238,7 @@
 				E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */,
 				E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */,
 				E6E5B7C82BDA0EE400A81587 /* CoreDataBugsStore.swift */,
+				E6E5B7CA2BDA133900A81587 /* ManagedBug.swift */,
 				E6E5B7C52BDA0DDC00A81587 /* BugsStore.xcdatamodeld */,
 			);
 			path = "Bugs Cache";
@@ -408,6 +411,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E5B7CB2BDA133900A81587 /* ManagedBug.swift in Sources */,
 				E6E5B7C22BDA0C5300A81587 /* LocalBug.swift in Sources */,
 				E67D27A42BBF079B006E8CD4 /* WelcomingView.swift in Sources */,
 				E67D27982BBF0768006E8CD4 /* ContentView.swift in Sources */,

@@ -65,17 +65,3 @@ public final class CoreDataBugsStore: BugsStore {
     }
     
 }
-
-@objc(ManagedBug)
-class ManagedBug: NSManagedObject {
-    @NSManaged var id: UUID
-    @NSManaged var imageDescription: String
-    @NSManaged var image: URL
-    @NSManaged var date: Date
-}
-
-extension ManagedBug {
-    var local: LocalBug {
-        return LocalBug(id: id, imageURL: image, description: imageDescription, createdOn: date)
-    }
-}
