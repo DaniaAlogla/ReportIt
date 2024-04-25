@@ -5,7 +5,7 @@
 //  Created by Dania Alogla on 16/10/1445 AH.
 //
 
-import Foundation
+import SwiftUI
 
 struct HistoryView: View {
     @ObservedObject var bugsHistoryViewModel = BugsHistoryViewModel()
