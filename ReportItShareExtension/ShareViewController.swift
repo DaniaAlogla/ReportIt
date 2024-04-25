@@ -86,6 +86,10 @@ class ShareViewController: UIViewController {
             }
         }
             
+        NotificationCenter.default.addObserver(forName: NSNotification.Name("closeShareExtension"), object: nil, queue: nil) { _ in
+            DispatchQueue.main.async {
+                self.closeShareExtension()
+            }
         }
     }
     
