@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct LocalBug {
+public struct LocalBug : Hashable {
     public let id: UUID
     public let imageURL: URL
     public let description: String
