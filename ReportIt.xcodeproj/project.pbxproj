@@ -37,6 +37,7 @@
 		E6E5B7BB2BD92EDC00A81587 /* bug-api in Frameworks */ = {isa = PBXBuildFile; productRef = E6E5B7BA2BD92EDC00A81587 /* bug-api */; };
 		E6E5B7BF2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */; };
 		E6E5B7C22BDA0C5300A81587 /* LocalBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */; };
+		E6E5B7C42BDA0D0700A81587 /* BugsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +98,7 @@
 		E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionViewModel.swift; sourceTree = "<group>"; };
 		E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionShareExtensionView.swift; sourceTree = "<group>"; };
 		E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBug.swift; sourceTree = "<group>"; };
+		E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */,
+				E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */,
 			);
 			path = "Bugs Cache";
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				E67D27962BBF0768006E8CD4 /* ReportItApp.swift in Sources */,
 				E67D27AA2BBF0FA3006E8CD4 /* ImagePicker.swift in Sources */,
 				E67D27A62BBF0858006E8CD4 /* BugSubmissionView.swift in Sources */,
+				E6E5B7C42BDA0D0700A81587 /* BugsStore.swift in Sources */,
 				E67D27A82BBF0A15006E8CD4 /* Bug.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
