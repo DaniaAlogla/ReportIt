@@ -10,6 +10,7 @@ import SwiftUI
 struct WelcomingView: View {
     
     @State var showBugSubmissionView = false
+    @Binding var showHistoryView : Bool
     
     var body: some View {
         NavigationStack {
@@ -51,5 +52,5 @@ struct WelcomingView: View {
 }
 
 #Preview {
-    WelcomingView()
+    WelcomingView(showHistoryView: .constant(false))
 }

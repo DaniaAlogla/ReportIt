@@ -18,10 +18,15 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct ReportItApp: App {
     
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @State var opendURL = false
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(opendURL: $opendURL)
+                .onOpenURL { _ in
+                    opendURL = true
+                    print(opendURL)
+                }
         }
     }
 }

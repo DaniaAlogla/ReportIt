@@ -8,11 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
+    @Binding var opendURL : Bool
+
     var body: some View {
-        WelcomingView()
+            WelcomingView(showHistoryView: $opendURL)
+        
     }
 }
 
 #Preview {
-    ContentView()
+    ContentView(opendURL: .constant(false))
 }

@@ -63,7 +63,8 @@ struct ReportItWidgetExtensionEntryView : View {
                     .font(.headline)
             }
             Spacer()
-        }
+        }.widgetURL(URL(string: "reportitapp://recentbugs")!)
+
     }
 }
 
