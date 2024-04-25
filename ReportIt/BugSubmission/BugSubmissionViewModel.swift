@@ -12,6 +12,8 @@ import Firebase
 
 public class BugSubmissionViewModel: ObservableObject {
     
+    private let coreDataBugsStore = CoreDataBugsStore()
+    
     public init() {
         FirebaseApp.configure()
     }
@@ -29,7 +31,7 @@ public class BugSubmissionViewModel: ObservableObject {
                     case let .success(url):
                         let imageURL = url
                         RemoteBugsManager.shared.storeBug((bug.description, imageURL)) { _ in }
-                        print(imageURL)
+                        self.coreDataBugsStore.insert(LocalBug(id: bug.id, imageURL: url, description: bug.description, createdOn: Date())) { _ in }
                     case .failure:
                         break
                     }

@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 
 public struct Bug {
+    let id = UUID()
     var description: String
     var image: UIImage?
 }
