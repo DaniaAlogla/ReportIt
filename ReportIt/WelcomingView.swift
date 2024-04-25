@@ -30,9 +30,21 @@ struct WelcomingView: View {
                 }
                 .buttonStyle(.borderedProminent)
                 
+                Button {
+                    showHistoryView.toggle()
+                } label: {
+                    Text("View history")
+                        .bold()
+                        .frame(maxWidth: .infinity)
+                }
+                .buttonStyle(.borderedProminent)
+                
             }.padding()
             .navigationDestination(isPresented: $showBugSubmissionView) {
                 BugSubmissionView()
+            }
+            .navigationDestination(isPresented: $showHistoryView) {
+                HistoryView()
             }
         }
     }
