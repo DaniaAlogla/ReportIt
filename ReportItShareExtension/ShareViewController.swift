@@ -29,7 +29,7 @@ class ShareViewController: UIViewController {
             
             if let image = providedImage as? UIImage {
                 DispatchQueue.main.async {
-                    let contentView = UIHostingController(rootView: BugSubmissionView(image: image))
+                    let contentView = UIHostingController(rootView: BugSubmissionShareExtensionView(image: image))
                     self.addChild(contentView)
                     self.view.addSubview(contentView.view)
                     
@@ -39,10 +39,33 @@ class ShareViewController: UIViewController {
                     contentView.view.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
                     contentView.view.rightAnchor.constraint (equalTo: self.view.rightAnchor).isActive = true
                 }
+            } else if let url = providedImage as? URL {
+                if let imageData = try? Data(contentsOf: url) {
+                    if let image = UIImage(data: imageData) {
+                        DispatchQueue.main.async {
+                            let contentView = UIHostingController(rootView: BugSubmissionShareExtensionView(image: image))
+                            self.addChild(contentView)
+                            self.view.addSubview(contentView.view)
+                            
+                            contentView.view.translatesAutoresizingMaskIntoConstraints = false
+                            contentView.view.topAnchor.constraint(equalTo: self.view.topAnchor).isActive = true
+                            contentView.view.bottomAnchor.constraint (equalTo: self.view.bottomAnchor).isActive = true
+                            contentView.view.leftAnchor.constraint(equalTo: self.view.leftAnchor).isActive = true
+                            contentView.view.rightAnchor.constraint (equalTo: self.view.rightAnchor).isActive = true
+                        }
+                    } else {
+                        self.closeShareExtension()
+                        return
+                    }
+                } else {
+                    self.closeShareExtension()
+                    return
+                }
             } else {
                 self.closeShareExtension()
                 return
             }
+        }
             
         }
     }
