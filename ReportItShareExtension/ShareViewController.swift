@@ -10,6 +10,25 @@ import Social
 import SwiftUI
 import UniformTypeIdentifiers
 
+struct BugSubmissionShareExtensionView: View {
+    let image : UIImage
+    var body: some View {
+        NavigationStack {
+            BugSubmissionView(image: image)
+                .navigationTitle("Bug Submission")
+                .toolbar {
+                    Button("Cancel") {
+                        closeShareExtension()
+                    }
+                }
+        }
+    }
+    
+    private func closeShareExtension() {
+        NotificationCenter.default.post(name: NSNotification.Name("closeShareExtension"), object: nil)
+    }
+}
+
 class ShareViewController: UIViewController {
     
     override func viewDidLoad() {
