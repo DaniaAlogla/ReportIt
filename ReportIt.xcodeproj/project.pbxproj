@@ -34,6 +34,7 @@
 		E67D27AD2BBF159A006E8CD4 /* bug-api in Frameworks */ = {isa = PBXBuildFile; productRef = E67D27AC2BBF159A006E8CD4 /* bug-api */; };
 		E67D27B12BBF185D006E8CD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E67D27B02BBF185D006E8CD4 /* GoogleService-Info.plist */; };
 		E67D27B32BBF26C5006E8CD4 /* BugSubmissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */; };
+		E6B813A92BDA212400E60F4E /* LocalBugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B813A82BDA212400E60F4E /* LocalBugView.swift */; };
 		E6E5B7BB2BD92EDC00A81587 /* bug-api in Frameworks */ = {isa = PBXBuildFile; productRef = E6E5B7BA2BD92EDC00A81587 /* bug-api */; };
 		E6E5B7BF2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */; };
 		E6E5B7C22BDA0C5300A81587 /* LocalBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */; };
@@ -104,6 +105,7 @@
 		E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E67D27B02BBF185D006E8CD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionViewModel.swift; sourceTree = "<group>"; };
+		E6B813A82BDA212400E60F4E /* LocalBugView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBugView.swift; sourceTree = "<group>"; };
 		E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionShareExtensionView.swift; sourceTree = "<group>"; };
 		E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalBug.swift; sourceTree = "<group>"; };
 		E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsStore.swift; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 				E67D27972BBF0768006E8CD4 /* ContentView.swift */,
 				E67D27A32BBF079B006E8CD4 /* WelcomingView.swift */,
 				E6E5B7D22BDA1F9800A81587 /* BugsHistoryViewModel.swift */,
+				E6B813A82BDA212400E60F4E /* LocalBugView.swift */,
 				E6E5B7C02BDA0BB000A81587 /* Bugs Cache */,
 				E67D27B42BBF284A006E8CD4 /* BugSubmission */,
 				E67D27992BBF076A006E8CD4 /* Assets.xcassets */,
@@ -422,6 +425,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6B813A92BDA212400E60F4E /* LocalBugView.swift in Sources */,
 				E6E5B7D32BDA1F9800A81587 /* BugsHistoryViewModel.swift in Sources */,
 				E6E5B7CB2BDA133900A81587 /* ManagedBug.swift in Sources */,
 				E6E5B7C22BDA0C5300A81587 /* LocalBug.swift in Sources */,
