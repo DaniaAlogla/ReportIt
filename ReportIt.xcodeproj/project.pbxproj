@@ -35,6 +35,7 @@
 		E67D27B12BBF185D006E8CD4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E67D27B02BBF185D006E8CD4 /* GoogleService-Info.plist */; };
 		E67D27B32BBF26C5006E8CD4 /* BugSubmissionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */; };
 		E6E5B7BB2BD92EDC00A81587 /* bug-api in Frameworks */ = {isa = PBXBuildFile; productRef = E6E5B7BA2BD92EDC00A81587 /* bug-api */; };
+		E6E5B7BF2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +94,7 @@
 		E67D27A92BBF0FA3006E8CD4 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		E67D27B02BBF185D006E8CD4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E67D27B22BBF26C5006E8CD4 /* BugSubmissionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionViewModel.swift; sourceTree = "<group>"; };
+		E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugSubmissionShareExtensionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				E65420D92BD8D0BF00EDADB4 /* ShareViewController.swift */,
+				E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */,
 				E65420DE2BD8D0BF00EDADB4 /* Info.plist */,
 				E65420F32BD8E96200EDADB4 /* GoogleService-Info.plist */,
 			);
@@ -367,6 +370,7 @@
 				E65420ED2BD8DEDB00EDADB4 /* ScreenSizingHelpers.swift in Sources */,
 				E65420EE2BD8DEE400EDADB4 /* ImagePicker.swift in Sources */,
 				E65420EC2BD8DED000EDADB4 /* Bug.swift in Sources */,
+				E6E5B7BF2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift in Sources */,
 				E65420E82BD8DE7800EDADB4 /* BugSubmissionViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
