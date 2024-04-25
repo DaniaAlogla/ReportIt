@@ -45,6 +45,7 @@
 		E6E5B7CD2BDA16B700A81587 /* CoreDataBugsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C82BDA0EE400A81587 /* CoreDataBugsStore.swift */; };
 		E6E5B7CE2BDA17A600A81587 /* BugsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C32BDA0D0700A81587 /* BugsStore.swift */; };
 		E6E5B7CF2BDA17B600A81587 /* ManagedBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7CA2BDA133900A81587 /* ManagedBug.swift */; };
+		E6E5B7D32BDA1F9800A81587 /* BugsHistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7D22BDA1F9800A81587 /* BugsHistoryViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		E6E5B7C62BDA0DDC00A81587 /* BugsStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BugsStore.xcdatamodel; sourceTree = "<group>"; };
 		E6E5B7C82BDA0EE400A81587 /* CoreDataBugsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataBugsStore.swift; sourceTree = "<group>"; };
 		E6E5B7CA2BDA133900A81587 /* ManagedBug.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagedBug.swift; sourceTree = "<group>"; };
+		E6E5B7D22BDA1F9800A81587 /* BugsHistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugsHistoryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				E67D27952BBF0768006E8CD4 /* ReportItApp.swift */,
 				E67D27972BBF0768006E8CD4 /* ContentView.swift */,
 				E67D27A32BBF079B006E8CD4 /* WelcomingView.swift */,
+				E6E5B7D22BDA1F9800A81587 /* BugsHistoryViewModel.swift */,
 				E6E5B7C02BDA0BB000A81587 /* Bugs Cache */,
 				E67D27B42BBF284A006E8CD4 /* BugSubmission */,
 				E67D27992BBF076A006E8CD4 /* Assets.xcassets */,
@@ -419,6 +422,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6E5B7D32BDA1F9800A81587 /* BugsHistoryViewModel.swift in Sources */,
 				E6E5B7CB2BDA133900A81587 /* ManagedBug.swift in Sources */,
 				E6E5B7C22BDA0C5300A81587 /* LocalBug.swift in Sources */,
 				E67D27A42BBF079B006E8CD4 /* WelcomingView.swift in Sources */,
