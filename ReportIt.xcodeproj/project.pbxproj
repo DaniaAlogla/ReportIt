@@ -37,6 +37,7 @@
 		E6B813A92BDA212400E60F4E /* LocalBugView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B813A82BDA212400E60F4E /* LocalBugView.swift */; };
 		E6B813AB2BDA21C000E60F4E /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B813AA2BDA21C000E60F4E /* HistoryView.swift */; };
 		E6B813AD2BDA2A4600E60F4E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = E6B813AC2BDA2A4600E60F4E /* README.md */; };
+		E6B813AE2BDA2DCD00E60F4E /* BugsStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C52BDA0DDC00A81587 /* BugsStore.xcdatamodeld */; };
 		E6E5B7BB2BD92EDC00A81587 /* bug-api in Frameworks */ = {isa = PBXBuildFile; productRef = E6E5B7BA2BD92EDC00A81587 /* bug-api */; };
 		E6E5B7BF2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7BE2BDA038A00A81587 /* BugSubmissionShareExtensionView.swift */; };
 		E6E5B7C22BDA0C5300A81587 /* LocalBug.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6E5B7C12BDA0C5300A81587 /* LocalBug.swift */; };
@@ -409,6 +410,7 @@
 				E65420E72BD8DBD800EDADB4 /* BugSubmissionView.swift in Sources */,
 				E6E5B7CC2BDA16B000A81587 /* LocalBug.swift in Sources */,
 				E65420ED2BD8DEDB00EDADB4 /* ScreenSizingHelpers.swift in Sources */,
+				E6B813AE2BDA2DCD00E60F4E /* BugsStore.xcdatamodeld in Sources */,
 				E65420EE2BD8DEE400EDADB4 /* ImagePicker.swift in Sources */,
 				E65420EC2BD8DED000EDADB4 /* Bug.swift in Sources */,
 				E6E5B7CF2BDA17B600A81587 /* ManagedBug.swift in Sources */,
